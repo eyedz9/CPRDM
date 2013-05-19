@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coolpad Demo Mode</title>
+	<link rel="stylesheet"  href="css/jquery.mobile-1.3.1.css">
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script>		
+		$(function() {
+			new_height = $('body').height() - 86;
+			$('.cp_menu').css('height', new_height + 'px');
+		});
+	</script>
+	<script src="phonegap.js"></script>
+	<script src="js/video.js"></script>
+	<script>
+		videojs.options.flash.swf = "js/video-js.swf"
+	</script>
+</head>
+<body>
+
+	<div data-role="page" data-theme="b" id="cp_home" style="margin: 0; padding: 0; text-align: center;">
+
+		<div data-role="content" class="cp_menu" style="position: relative;">
+			<img src="images/top.png" style="width: 100%; height: auto;">
+			<div style="width: 100%; position: absolute; bottom: 8px; left: 0; padding: 0;">
+				<a href="file://localhost/mnt/sdcard/cprdm/company.mp4"><img src="images/btn_story.png" style="margin-bottom: 8px; min-width: 100%; max-width: 100%;"></a><!-- video company.mp4 -->
+				<a href="file://localhost/mnt/sdcard/cprdm/features.mp4"><img src="images/btn_features.png" style="margin-bottom: 8px; min-width: 100%; max-width: 100%;"></a><!-- video features.mp4 -->
+				<a href="file://localhost/mnt/sdcard/cprdm/os.mp4"><img src="images/btn_os.png" style="min-width: 100%; max-width: 100%;"></a><!-- video os.mp4 -->
+			</div>
+		</div><!-- /content -->
+		
+		<div data-role="footer" class="cp_menu_footer" style="margin: 0; padding: 0; width: 100%;"><br />
+			<img src="images/home-button.jpg" /><img src="images/music-button.jpg" /><img src="images/game-button.jpg" /><img src="images/photo-button.jpg" />
+		</div><!-- /footer -->
+		
+	</div><!-- /page -->
+	
+</body>
+</html>

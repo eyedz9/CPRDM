@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.identitymarketinggroup.cprdm" version = "1.0.0">
+
+		<name>Coolpad RDM</name>
+
+		<description>
+			Coolpad Retail Demo Mode Quattro II
+		</description>
+
+		<author href="http://www.identitymarketinggroup.com" email="support@identitymarketinggroup.com">
+			Identity Marketing Group, Inc.
+		</author>
+		
+		<preference name="orientation" value="portrait" />
+		
+		<preference name="fullscreen" value="true" />
+		
+		<icon src="icon.png" />
+
+	</widget>
